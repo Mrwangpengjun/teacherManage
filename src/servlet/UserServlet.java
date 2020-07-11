@@ -92,7 +92,7 @@ public class UserServlet extends HttpServlet{
 					out.close();
 				}
 			}
-		} else if("delete".equals(act)) {
+		} else if("delete".equals(action)) {
 			int id = Integer.parseInt(req.getParameter("id"));
 			CourseDao courseDao = new CourseDao();
 			List<Course> courses = courseDao.queryAllByPage(id);
