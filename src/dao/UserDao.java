@@ -26,7 +26,7 @@ public class UserDao {
 			conn = DBUtils.getConn();
 			String sql = "select * from user where username=? and password=? and type = ?";
 			pstm = conn.prepareStatement(sql);
-			pstm.setString(2, username);
+			pstm.setString(1, username);
 			pstm.setString(2, password);
 			pstm.setInt(3, type);
 			rs = pstm.executeQuery();
