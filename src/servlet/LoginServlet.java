@@ -34,7 +34,7 @@ public class LoginServlet extends HttpServlet{
 		req.setCharacterEncoding("UTF-8");
 		resp.setCharacterEncoding("UTF-8");
 		resp.setContentType("text/html;charset=UTF-8");
-		String action = req.getParameter("action");
+		String action = req.getParameter("action1");
 		if("login".equals(action)) {
 			boolean flag = false;
 			String username = req.getParameter("username");
