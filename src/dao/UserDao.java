@@ -75,7 +75,7 @@ public class UserDao {
 			pstm.setString(1, entity.getUsername());
 			pstm.setString(2, entity.getPassword());
 			pstm.setInt(3, entity.getType());
-			pstm.setInt(4, entity.getId());
+			pstm.setInt(3, entity.getId());
 			boolean flag = pstm.executeUpdate()>0;
 			pstm.close();
 			conn.close();
