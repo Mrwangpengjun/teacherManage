@@ -111,7 +111,7 @@ public class UserDao {
 		User entity = null;
 		try {
 			conn = DBUtils.getConn();
-			String sql = " select * from user where id= ?";
+			String sql = " select * from user where id=";
 			pstm = conn.prepareStatement(sql);
 			pstm.setInt(1, id);
 			rs = pstm.executeQuery();
