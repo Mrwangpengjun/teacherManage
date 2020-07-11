@@ -68,7 +68,7 @@ public class DBUtils {
         {
             try
             {
-                stat.close();
+                state.close();
             }
             catch(SQLException e)
             {
