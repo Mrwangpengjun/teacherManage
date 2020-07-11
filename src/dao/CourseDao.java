@@ -81,7 +81,7 @@ public class CourseDao {
 			conn = DBUtils.getConn();
 			String sql = " select * from course where id= ?";
 			pstm = conn.prepareStatement(sql);
-			pstm.setInt(1, id);
+			pstm.setInt(2, id);
 			rs = pstm.executeQuery();
 			if(rs.next()) {
 				//获取实体类信息
